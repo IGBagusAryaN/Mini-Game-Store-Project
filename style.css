@@ -194,7 +194,7 @@ body {
 
 #product1 .pro {
     width: 23%;
-    height: 310px;
+    height: 270px;
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
@@ -252,7 +252,7 @@ body {
 #product1 .pro .des .discount {
     background-color: #1a1a1a;
     padding: 10px;
-    width: 18%;
+    width: 24%;
     margin: 7px 0;
     color: #FFFF;
     border-radius: 5px;

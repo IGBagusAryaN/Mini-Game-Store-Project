@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+
+h6 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    background-color: #FFFF;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #FFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+#navbar li{
+    position: relative;
+}
+
+#navbar li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #3B5A91;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #3B5A91;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
+
+#hero {
+    background-image: url(image/hero.png);
+    height: 86.5vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#hero h4{
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+#hero h1{
+    color: #3B5A91;
+}
+
+#hero .btn-hero{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #3B5A91;
+    color: #FFFF;
+    cursor: pointer;
+}
+
+#hero .container {
+    display: flex;
+    gap: 20px;
+}
+
+#hero form {
+    width: 250px;
+    background-color: #F9F9FA;
+    border-radius: 10px;
+}
+
+#hero form button {
+    background: none;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    margin-block: 15px;
+    color: gray;
+}
+
+#hero input {
+    padding: 15px 0;
+    margin-left: 5px;
+    border-radius: 7px;
+    border: none;
+    width: 200px;
+    outline: none;
+    color: #1a1a1a;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 10px; 
+    border: 1px solid rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.2);
+}
+
+#feature .fe-box h6 {
+    line-height: 1;
+    padding-top: 10px;
+}
+
+#feature .fe-box h6:hover {
+    color: #3B5A91;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro {
+    width: 23%;
+    height: 310px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    font-size: 12px;
+    color: #606063;
+}
+
+#product1 .pro .des h5 {
+    font-size: 15px;
+    color: #1a1a1a;
+    padding-top: 7px;
+}
+
+#product1 .pro .des .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product1 .pro .des .price a {
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#product1 .pro .des .discount {
+    background-color: #1a1a1a;
+    padding: 10px;
+    width: 18%;
+    margin: 7px 0;
+    color: #FFFF;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#product1 .pro .des .price a:hover {
+    color: #3B5A91;
+}
+
+#product1 .pro .des .discount:hover {
+    background-color: #3B5A91;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(image/banner1.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-block: 50px;
+}
+
+#banner h4 {
+    font-size: 34px;
+}
+
+#banner h2 {
+    font-size: 80px;
+    padding-block: 20px;
+}
+
+#banner span {
+    font-size: 24px;
+}
+
+#banner button {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    color: #FFFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#banner button:hover {
+    background-color: #3B5A91;
+}

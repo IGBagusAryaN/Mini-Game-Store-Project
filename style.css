@@ -158,6 +158,7 @@ body {
     width: 200px;
     outline: none;
     color: #1a1a1a;
+    background-color: #F9F9FA;
 }
 
 #feature{
@@ -410,7 +411,7 @@ body {
 
 
 
-@media  (max-width: 550px){
+@media  (max-width: 384px){
     #header {
         padding: 20px;
     }
@@ -471,21 +472,39 @@ body {
 
     #hero h4{
         font-size: 12px;
+        padding: 10px 0;
     }
 
     #hero h2 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 20px;
     }
     
     #hero h1{
         color: #3B5A91;
-        font-size: 28px;
+        font-size: 18px;
         line-height: 20px;
     }
 
     #hero p {
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    #hero .container {
+        flex-direction: column;
+    }
+
+    #hero .btn-hero { 
+        padding: 10px;
+        font-size: 10px;
+    }
+    #hero form {
+        width: 150px;
+        padding: 0;
+    }
+    #hero input {
+        width: 100px;
+        font-size: 10px;
     }
 }

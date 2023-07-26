@@ -410,7 +410,10 @@ body {
 
 
 
-@media (max-width: 799px){
+@media  (max-width: 550px){
+    #header {
+        padding: 20px;
+    }
     #navbar {
         display: flex;
         flex-direction: column;
@@ -430,7 +433,6 @@ body {
         right: 0;
     }
 
-    
 
     #mobile {
         display: flex;
@@ -456,9 +458,34 @@ body {
         display: none;
     }
 
+    #close {
+        display: block;
+    }
+
     #hero {
         height: 70vh;
-        padding: 0 80px;
-        background-position: top 30% right 85%;
+        padding: 0 20px;
+
+        background-position: top 30% right 45%;
+    }
+
+    #hero h4{
+        font-size: 12px;
+    }
+
+    #hero h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    #hero h1{
+        color: #3B5A91;
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    #hero p {
+        font-size: 13px;
+        line-height: 20px;
     }
 }

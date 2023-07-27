@@ -422,6 +422,9 @@ body {
 
 
 @media  (max-width: 550px){
+    .section-p1 {
+        padding: 40px 40px;
+    }
     #header {
         padding: 20px;
     }
@@ -536,5 +539,20 @@ body {
     #feature .fe-box h6 {
         font-size: 10px;
         margin-top: 5px;
+    }
+    #product1 {
+        padding: 0;
+    }
+
+    #product1 .pro {
+        height: 220px;
+        min-width: 150px;
+    }
+
+    #product1 .pro .des .discount {
+        background-color: #1a1a1a;
+        padding: 10px;
+        width: 43%;
+        margin: 7px 0;
     }
 }

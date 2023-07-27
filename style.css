@@ -543,6 +543,9 @@ body {
     #product1, #product2{
         padding: 0;
     }
+    #product2 {
+        padding: 10px;
+    }
 
     #product1 .pro {
         height: 220px;

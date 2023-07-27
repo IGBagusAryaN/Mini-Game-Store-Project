@@ -543,7 +543,7 @@ body {
     #product1, #product2{
         padding: 0;
     }
-    
+
     #product2 {
         padding: 10px;
     }
@@ -559,9 +559,27 @@ body {
     }
 
     #product1 .pro .des .discount {
-        background-color: #1a1a1a;
-        padding: 10px;
         width: 43%;
-        margin: 7px 0;
+    }
+
+    #banner {
+        height: 30vh;
+        padding-block: 30px;
+    }
+
+    #banner h4 {
+        font-size: 14px;
+    }
+    
+    #banner h2 {
+        font-size: 40px;
+    }
+    
+    #banner span {
+        font-size: 12px;
+    }
+    
+    #banner button {
+        margin-top: 15px;
     }
 }

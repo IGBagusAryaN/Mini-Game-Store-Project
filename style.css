@@ -481,9 +481,9 @@ body {
     }
 
     #hero {
-        height: 70vh;
+        height: 60vh;
         padding: 20px;
-        background-position: top 30% right 40%;
+        background-position: top 30% right 60%;
     }
 
     #hero h4{

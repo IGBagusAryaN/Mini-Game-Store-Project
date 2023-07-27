@@ -526,6 +526,10 @@ body {
         padding: 0;
     }
 
+    #feature {
+        padding: 5px;
+    }
+
     #feature .fe-box {
         width: 100px;
     }

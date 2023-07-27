@@ -540,13 +540,18 @@ body {
         font-size: 10px;
         margin-top: 5px;
     }
-    #product1 {
+    #product1, #product2{
         padding: 0;
     }
 
     #product1 .pro {
         height: 220px;
         min-width: 150px;
+    }
+
+    #product2 .pro {
+        height: 270px;
+        min-width: 200px;
     }
 
     #product1 .pro .des .discount {

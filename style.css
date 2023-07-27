@@ -216,10 +216,10 @@ body {
     border-radius: 5px;
     margin: 15px 0;
     transition: 0.2s ease;
-    /* background-image: url(image/bg-card.png);
+    background-image: url(image/bg-card.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; */
+    background-position: center center;
 }
 
 #product1 .pro:hover{

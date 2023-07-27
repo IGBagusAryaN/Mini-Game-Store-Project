@@ -63,6 +63,11 @@ body {
     left: 0;
 }
 
+#header .logo img{
+    width: 100px;
+}
+
+
 #navbar {
     display: flex;
     align-items: center;
@@ -415,6 +420,11 @@ body {
     #header {
         padding: 20px;
     }
+
+    #header .logo img{
+        width: 70px;
+    }
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -434,7 +444,6 @@ body {
         right: 0;
     }
 
-
     #mobile {
         display: flex;
         align-items: center;
@@ -443,7 +452,7 @@ body {
 
     #mobile i {
         color: #1a1a1a;
-        font-size: 20px;
+        font-size: 15px;
         cursor: pointer;
     }
 
@@ -493,19 +502,23 @@ body {
 
     #hero .container {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     #hero .btn-hero { 
         padding: 10px;
         font-size: 10px;
     }
+
     #hero form {
         width: 150px;
         padding: 0;
+        margin-top: -15px;
     }
     #hero input {
         width: 100px;
         font-size: 10px;
+        padding: 0;
     }
     #feature .fe-box {
         width: 0px;

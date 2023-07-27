@@ -543,6 +543,7 @@ body {
     #product1, #product2{
         padding: 0;
     }
+    
     #product2 {
         padding: 10px;
     }
@@ -554,7 +555,7 @@ body {
 
     #product2 .pro {
         height: 270px;
-        min-width: 170px;
+        min-width: 160px;
     }
 
     #product1 .pro .des .discount {

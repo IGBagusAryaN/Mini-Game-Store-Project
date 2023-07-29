@@ -555,8 +555,12 @@ body {
     }
 
     #product2 .pro {
-        height: 270px;
-        min-width: 160px;
+        height: 290px;
+        min-width: 300px;
+    }
+
+    #product2 .pro .des p {
+        -webkit-line-clamp: 2;
     }
 
     #product1 .pro .des .discount {

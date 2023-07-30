@@ -490,7 +490,7 @@ body {
 
 #carousel .card {
     scroll-snap-align: start;
-    width: 370px;
+
     padding: 10px;
     border-radius: 30px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -688,14 +688,21 @@ body {
     #banner button {
         margin-top: 15px;
     }
+
+    #carousel h2 {
+        text-align: center;
+    }
+
     #carousel .card-container {
-        grid-auto-columns: calc((100% / 1) - 12px);
+        grid-auto-columns: 100%;
     }
 
     #carousel .wrapper i:first-child {
-        left: -27px;
+        left: 0px;
     }
+
     #carousel .wrapper i:last-child {
-        right: -27px;
+        right: 0px;
     }
+
 }

@@ -18,6 +18,7 @@ h2 {
     font-size: 46px;
     line-height: 54px;
     color: #222;
+    font-weight: 600;
 }
 
 h4 {
@@ -171,10 +172,11 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 40px 90px;
 }
 
 #feature .fe-box {
-    width: 180px;
+    width: 150px;
     text-align: center;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
     padding: 10px;
@@ -325,7 +327,7 @@ body {
 }
 
 #product2 .pro {
-    width: 30%;
+    width: 32%;
     height: 350px;
     min-width: 250px;
     padding: 10px 12px;
@@ -419,6 +421,105 @@ body {
     display: none;
 }
 
+#carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-block: 50px;
+}
+
+#carousel .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+#carousel .wrapper i {
+    height: 50px;
+    width: 50px;
+    background-color: #3B5A91;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #FFFF;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#carousel .wrapper i:first-child {
+    left: -22px;
+}
+#carousel .wrapper i:last-child {
+    right: -22px;
+}
+
+#carousel .card-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+#carousel .card-container::-webkit-scrollbar{
+    display: none;
+}
+
+#carousel .card-container.no-transition{
+    scroll-behavior: auto;
+}
+
+#carousel .card-container.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+#carousel .card-container.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+
+#carousel .card {
+    scroll-snap-align: start;
+    width: 370px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+
+#carousel .card img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+#carousel .card .des {
+    height: 120px;
+    padding: 15px;
+    text-align: justify;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+#carousel .card .des h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#carousel .card .des span {
+    font-size: 12px ;
+    color: rgb(74, 74, 74);
+    
+}
 
 
 @media  (max-width: 550px){
@@ -586,5 +687,15 @@ body {
     
     #banner button {
         margin-top: 15px;
+    }
+    #carousel .card-container {
+        grid-auto-columns: calc((100% / 1) - 12px);
+    }
+
+    #carousel .wrapper i:first-child {
+        left: -27px;
+    }
+    #carousel .wrapper i:last-child {
+        right: -27px;
     }
 }

@@ -218,10 +218,10 @@ body {
     border-radius: 5px;
     margin: 15px 0;
     transition: 0.2s ease;
-    background-image: url(image/bg-card.png);
+    /* background-image: url(image/bg-card.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; */
 }
 
 #product1 .pro:hover{
@@ -337,9 +337,9 @@ body {
     border-radius: 5px;
     margin: 15px 0;
     transition: 0.2s ease;
-    background-image: url(image/bg-card.png);
+    /* background-image: url(image/bg-card.png);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 #product2 .pro:hover{
@@ -698,11 +698,11 @@ body {
     }
 
     #carousel .wrapper i:first-child {
-        left: 0px;
+        left: 4px;
     }
 
     #carousel .wrapper i:last-child {
-        right: 0px;
+        right: 4px;
     }
 
 }

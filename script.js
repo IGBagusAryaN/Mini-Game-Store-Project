@@ -21,7 +21,7 @@ const arrowBtns = document.querySelectorAll('.wrapper i');
 const firstCardWidth = carousel.querySelector('.card').offsetWidth;
 const carouselChildrens = [...carousel.children]
 
-let isDragging = false, startX, startScrollLeft;
+let isDragging = false, startX, startScrollLeft, timeoutId;
 
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 

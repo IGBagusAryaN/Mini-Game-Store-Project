@@ -106,7 +106,7 @@ body {
 
 
 #hero {
-    background-image: url(image/hero2.png);
+    background-image: url(image/hero.png);
     height: 86.5vh;
     width: 100%;
     background-size: cover;
@@ -170,16 +170,16 @@ body {
 #feature{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 40px 90px;
+    padding: 40px 70px;
 }
 
 #feature .fe-box {
     width: 150px;
+    height: 80px;
     text-align: center;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    padding: 10px;
     border-radius: 10px; 
     border: 1px solid rgb(202, 202, 202);
     cursor: pointer;
@@ -188,6 +188,9 @@ body {
 
 #feature .fe-box img {
     width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
 }
 
 #feature .fe-box:hover {
@@ -636,6 +639,7 @@ body {
 
     #feature .fe-box {
         width: 100px;
+        height: 59px;
     }
 
     #feature .fe-box h6 {

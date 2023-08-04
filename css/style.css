@@ -745,7 +745,7 @@ body {
     }
 
     #product1 .pro-container {
-        grid-auto-columns: calc((100% / 2) - 12px);
+        grid-auto-columns: calc((100% / 2));
     }
 
 }

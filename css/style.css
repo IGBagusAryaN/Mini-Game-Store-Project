@@ -55,7 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 10px 80px;
     background-color: #FFFF;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     position: sticky;
@@ -104,9 +104,8 @@ body {
 }
 
 
-
 #hero {
-    background-image: url(image/hero.png);
+    background-image: url(../image/hero2.png);
     height: 86.5vh;
     width: 100%;
     background-size: cover;
@@ -124,22 +123,19 @@ body {
 }
 
 #hero h1{
-    color: #3B5A91;
+    color: #555EDE;
 }
 
 #hero .btn-hero{
     padding: 15px 20px;
     border: none;
     border-radius: 7px;
-    background-color: #3B5A91;
+    background-color: #555EDE;
     color: #FFFF;
     cursor: pointer;
 }
 
-#hero .container {
-    display: flex;
-    gap: 20px;
-}
+
 
 #hero form {
     width: 250px;
@@ -172,7 +168,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 40px 70px;
+    padding: 40px 90px;
 }
 
 #feature .fe-box {
@@ -184,6 +180,7 @@ body {
     border: 1px solid rgb(202, 202, 202);
     cursor: pointer;
     margin: 10px 0;
+    transition: 0.1s ease-out;
 }
 
 #feature .fe-box img {
@@ -195,6 +192,7 @@ body {
 
 #feature .fe-box:hover {
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.2);
+    border: 3px  solid #3B5A91 ;
 }
 
 #feature .fe-box h6 {
@@ -211,6 +209,7 @@ body {
 }
 
 #product1 .pro {
+    scroll-snap-align: start;
     width: 23%;
     height: 270px;
     min-width: 250px;
@@ -237,11 +236,32 @@ body {
 }
 
 #product1 .pro-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+#product1 .pro-container::-webkit-scrollbar{
+    display: none;
+}
+
+#product1 .pro-container.no-transition{
+    scroll-behavior: auto;
+}
+
+#product1 .pro-container.dragging .pro {
+    cursor: grab;
+    user-select: none;
+}
+
+#product1 .pro-container.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
 }
 
 #product1 .pro .des {
@@ -289,13 +309,26 @@ body {
     background-color: #3B5A91;
 }
 
+#product1 #left, #product1 #right {
+    height: 50px;
+    width: 50px;
+    background-color: #555EDE;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #FFFF;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+
 #banner {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-image: url(image/banner1.png);
+    background-image: url(../image/banner2.png);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -442,7 +475,7 @@ body {
 #carousel .wrapper i {
     height: 50px;
     width: 50px;
-    background-color: #3B5A91;
+    background-color: #555EDE;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -454,6 +487,8 @@ body {
     font-size: 1.25rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
+
 
 #carousel .wrapper i:first-child {
     left: -22px;

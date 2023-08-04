@@ -14,6 +14,70 @@ if (close) {
     })
 }
 
+// card slider
+const carousel1 = document.querySelector('.pro-container');
+const arrowBtns1 = document.querySelectorAll('#product1 i');
+const firstCardWidth1 = carousel1.querySelector('.pro').offsetWidth;
+// const carouselChildrens1 = [...carousel1.children]
+
+
+
+// let cardPerView1 = Math.round(carousel1.offsetWidth / firstCardWidth1);
+
+// carouselChildrens1.slice(-cardPerView1).reverse().forEach(card => {
+//     carousel1.insertAdjacentHTML("afterbegin", card.outerHTML)
+// })
+
+// carouselChildrens1.slice(0, cardPerView1).forEach(card => {
+//     carousel1.insertAdjacentHTML("beforeend", card.outerHTML)
+// })
+
+
+let isDragging = false, startX, startScrollLeft, timeoutId;
+
+arrowBtns1.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel1.scrollLeft += btn.id === "left" ? -firstCardWidth1 : firstCardWidth1;
+    });
+});
+
+const dragStart1 = (e) => {
+    isDragging = true;
+    carousel1.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft = carousel1.scrollLeft
+}
+
+const dragging1 = (e) => {
+    if(!isDragging) return;
+    carousel1.scrollLeft = e.pageX;
+    carousel1.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop1 = () => {
+    isDragging = false;
+    carousel1.classList.remove("dragging");
+};
+
+// const infiniteScroll1 = () => {
+//     if(carousel1.scrollLeft === 0) {
+//         carousel1.classList.add("no-transition")
+//         carousel1.scrollLeft = carousel1.scrollWidth - ( 2 * carousel1.offsetWidth);
+//         carousel1.classList.remove("no-transition")
+//     }
+//     else if(Math.ceil(carousel1.scrollLeft) === carousel1.scrollWidth - carousel1.offsetWidth){
+//         carousel1.classList.add("no-transition")
+//         carousel1.scrollLeft = carousel1.offsetWidth;
+//         carousel1.classList.remove("no-transition")
+//     }
+// }
+
+carousel1.addEventListener("mousedown", dragStart1);
+carousel1.addEventListener("mousemove", dragging1);
+document.addEventListener("mouseup", dragStop1);
+// carousel1.addEventListener("scroll", infiniteScroll1);
+
+
 
 // carousel
 const carousel = document.querySelector('.card-container');
@@ -21,7 +85,7 @@ const arrowBtns = document.querySelectorAll('.wrapper i');
 const firstCardWidth = carousel.querySelector('.card').offsetWidth;
 const carouselChildrens = [...carousel.children]
 
-let isDragging = false, startX, startScrollLeft, timeoutId;
+
 
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
@@ -75,3 +139,4 @@ carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
+

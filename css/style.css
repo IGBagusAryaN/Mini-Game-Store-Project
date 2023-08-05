@@ -158,7 +158,7 @@ body {
 }
 
 #hero #slide {
-    width: max-content;
+
     overflow: hidden;
 }
 
@@ -791,7 +791,7 @@ body {
     }
 
     #hero .container .item {
-        top: 40%;
+        top: 37%;
         background-position: top 40% left 50%;
     }
 
@@ -811,7 +811,14 @@ body {
         display: block;
         z-index: 11111;
     }
+
+    #hero .container .item:nth-child(3),
+    #hero .container .item:nth-child(4),
+    #hero .container .item:nth-child(n+5) {
+        left: 46%;
+    }
     
+
     #hero .container .item .name {
         font-size: 20px;
     }
@@ -824,7 +831,7 @@ body {
 
     #hero .container .buttons {
         bottom: 200px;
-        z-index: 999999999999999999999;
+        z-index: 99;
     }
 
     #feature {

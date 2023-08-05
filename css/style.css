@@ -793,6 +793,7 @@ body {
     #hero .container .item {
         top: 39%;
         background-position: top 40% left 50%;
+        box-shadow: 0 10px 40px #505050;
     }
 
     #hero .container .item .content {
@@ -815,7 +816,7 @@ body {
     #hero .container .item:nth-child(3),
     #hero .container .item:nth-child(4),
     #hero .container .item:nth-child(n+5) {
-        left: 44%;
+        left: 45%;
     }
     
 

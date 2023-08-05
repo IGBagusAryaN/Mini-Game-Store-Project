@@ -815,7 +815,7 @@ body {
     #hero .container .item:nth-child(3),
     #hero .container .item:nth-child(4),
     #hero .container .item:nth-child(n+5) {
-        left: 42%;
+        left: 44%;
     }
     
 

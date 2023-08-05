@@ -791,7 +791,7 @@ body {
     }
 
     #hero .container .item {
-        top: 35%;
+        top: 40%;
         background-position: top 40% left 50%;
     }
 
@@ -823,7 +823,7 @@ body {
     }
 
     #hero .container .buttons {
-        bottom: 220px;
+        bottom: 200px;
         z-index: 999999999999999999999;
     }
 

@@ -68,11 +68,41 @@ body {
     width: 100px;
 }
 
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* .nav-left .search {
+    display: flex;
+    border: 1px solid #222;
+    padding: 5px 7px;
+    border-radius: 20px;
+}
+.nav-left .search i {
+    cursor: pointer;
+}
+
+#header .nav-left .search form input{
+    outline: none;
+    border: none;
+    width: 100px;
+} */
+
+#header .nav-right .login {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#header .nav-right .login:hover {
+    color: #555EDE;
+}
 
 #navbar {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     list-style: none;
 }
 
@@ -89,7 +119,7 @@ body {
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #3B5A91;
+    color: #555EDE;
 }
 
 #navbar li a.active::after,
@@ -97,14 +127,14 @@ body {
     content: "";
     width: 50%;
     height: 2px;
-    background-color: #3B5A91;
+    background-color: #555EDE;
     position: absolute;
     bottom: -4px;
     left: 0px;
 }
 
 
-#hero {
+/* #hero {
     background-image: url(../image/hero2.png);
     height: 86.5vh;
     width: 100%;
@@ -115,9 +145,154 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+} */
+
+#hero {
+    width: 100%;
+    height: 90vh;
 }
 
-#hero h4{
+#hero #slide {
+    width: max-content;
+}
+
+
+#hero .container .item {
+    width: 200px;
+    height: 100px;
+    background-position: top 40% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    border-radius: 3px;
+    box-shadow: 0 30px 50px #505050;
+    margin-top: 54px;
+    
+}
+
+#hero .container .item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%; /* Sesuaikan persentase gelapkan yang diinginkan */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); /* Ubah warna atau transparansi sesuai keinginan */
+    z-index: 2;
+    border-radius: 2px;
+  }
+  
+
+#hero .container .item:nth-child(1),
+#hero .container .item:nth-child(2) {
+    left: 0;
+    top: 0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 90vh;
+    box-shadow: none;
+}
+
+#hero .container .item:nth-child(3) {
+    left: 48%;
+}
+
+#hero .container .item:nth-child(4) {
+    left: calc( 48% + 220px );
+}
+
+#hero .container .item:nth-child(n+5) {
+    left: calc( 48% + 440px );
+}
+
+
+#hero .container .item .content {
+    position: absolute;
+    top: 30%;
+    left: 100px;
+    width: 400px;
+    text-align: left;
+    padding: 0;
+    color: #FFFF;
+    transform: translate(0, 50%);
+    display: none;
+    z-index: 3;
+}
+
+#hero .container .item:nth-child(2) .content {
+    display: block;
+    z-index: 11111;
+}
+
+#hero .container .item .name {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+
+#hero .container .item .des {
+    margin: 20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+}
+
+#hero .container .item button {
+    padding: 10px 20px;
+    border: none;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#hero .container .item button:hover {
+    background-color: #555EDE;
+    color: #FFFF;
+}
+
+@keyframes showcontent {
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
+
+#hero .container .buttons {
+    position: absolute;
+    bottom: 30px;
+    text-align: right;
+    right: 20px;
+    width: 100%;
+    z-index: 99999;
+}
+
+#hero .container .buttons button {
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+#hero .container .buttons button:hover {
+    background-color: #555EDE;
+    color: #FFFF;
+}
+
+
+
+
+
+/* #hero h4{
     padding-bottom: 10px;
     font-weight: 600;
 }
@@ -137,12 +312,6 @@ body {
 
 
 
-#hero form {
-    width: 250px;
-    background-color: #F9F9FA;
-    border-radius: 10px;
-}
-
 #hero form button {
     background: none;
     outline: none;
@@ -150,18 +319,7 @@ body {
     margin-left: 20px;
     margin-block: 15px;
     color: gray;
-}
-
-#hero input {
-    padding: 15px 0;
-    margin-left: 5px;
-    border-radius: 7px;
-    border: none;
-    width: 200px;
-    outline: none;
-    color: #1a1a1a;
-    background-color: #F9F9FA;
-}
+} */
 
 #feature{
     display: flex;
@@ -192,7 +350,7 @@ body {
 
 #feature .fe-box:hover {
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.2);
-    border: 3px  solid #3B5A91 ;
+    border: 3px  solid #555EDE ;
 }
 
 #feature .fe-box h6 {
@@ -201,7 +359,7 @@ body {
 }
 
 #feature .fe-box h6:hover {
-    color: #3B5A91;
+    color: #555EDE;
 }
 
 #product1, #product2 {
@@ -302,11 +460,11 @@ body {
 }
 
 #product1 .pro .des .price a:hover {
-    color: #3B5A91;
+    color: #555EDE;
 }
 
 #product1 .pro .des .discount:hover {
-    background-color: #3B5A91;
+    background-color: #555EDE;
 }
 
 #product1 #left, #product1 #right {
@@ -359,7 +517,7 @@ body {
 }
 
 #banner button:hover {
-    background-color: #3B5A91;
+    background-color: #555EDE;
 }
 
 #product2 .pro {
@@ -446,11 +604,11 @@ body {
 }
 
 #product2 .pro .des .price a:hover {
-    color: #3B5A91;
+    color: #555EDE;
 }
 
 #product2 .pro .des .discount:hover {
-    background-color: #3B5A91;
+    background-color: #555EDE;
 }
 
 #mobile, #close{
@@ -621,52 +779,38 @@ body {
     }
 
     #hero {
-        height: 60vh;
+        height: 0vh;
         padding: 20px;
         background-position: top 30% right 50%;
     }
 
-    #hero h4{
-        font-size: 12px;
-        padding: 10px 0;
+    #hero .container .item {
+        top: 50%;
+        background-position: top 40% left 50%;
     }
 
-    #hero h2 {
-        font-size: 20px;
-        line-height: 20px;
+    #hero .container .item .content {
+        position: absolute;
+        top: 45%;
+        left: 10px;
+        width: 150px;
     }
     
-    #hero h1{
-        color: #3B5A91;
-        font-size: 18px;
-        line-height: 20px;
+    #hero .container .item:nth-child(2) .content {
+        display: block;
+        z-index: 11111;
     }
-
-    #hero p {
-        font-size: 10px;
-        line-height: 10px;
+    
+    #hero .container .item .name {
+        font-size: 20px;
     }
-
-    #hero .container {
-        flex-direction: column;
-        align-items: flex-start;
+    
+    
+    #hero .container .item .des {
+        font-size: 12px;
+        margin-top: 5px;
     }
-
-    #hero .btn-hero { 
-        padding: 10px;
-        font-size: 10px;
-    }
-
-    #hero form {
-        width: 150px;
-        padding: 0;
-        margin-top: -15px;
-    }
-    #hero input {
-        width: 100px;
-        font-size: 10px;
-        padding: 0;
-    }
+    
 
     #feature {
         padding: 10px;

@@ -14,19 +14,28 @@
 </head>
 <body>
     <section id="header">
-        <a href="" class="logo"><img src="image/logo.png" alt="" ></a>
-
-        <div>
+        <div class="nav-left">
+            <a href="" class="logo"><img src="image/logo.png" alt="" ></a>
+            <!-- <div class="search">
+                <form action="">
+                    <input type="text" placeholder="Search games..."> 
+                </form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div> -->
+            
+        </div>
+        <div class="nav-right">
             <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="index.html">Store</a></li>
+                <li><a href="shop.html">Explore</a></li>
+                <!-- <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="" id="lg-cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="contact.html">Contact</a></li> -->
                 <a href="#" id="close"><i class="fa-solid fa-times"></i></a>
             </ul>
+            <i class="fa-solid fa-right-to-bracket login"></i>
         </div>
+            
         <div id="mobile">
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             <i id="bar" class="fa-solid fa-outdent"></i>
@@ -34,12 +43,51 @@
     </section>
 
     <section id="hero">
-        <h4>Discover super value trade-in offers</h4>
-        <h2>Super Value deals</h2>
-        <h1>On all game products</h1>
-        <p>Save even more with coupons of up to 50% off!</p>
-        <button class="btn-hero">Shop Now!</button>
-           
+        <div class="container">
+            <div id="slide">
+                <div class="item" style="background-image: url(image/hero4.png);">
+                    <div class="content">
+                        <div class="name">Rachet and Clank: Rift Apart</div>
+                        <div class="des">Embark on an Epic Intergalactic Adventure with Ratchet and Clank!</div>
+                        <button>See More!</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/hero5.png);">
+                    <div class="content">
+                        <div class="name">Valorant</div>
+                        <div class="des">Unleash Your Tactical Prowess in Valorant - Grab the Chance to Win Big! </div>
+                        <button>See More!</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/hero3.png);">
+                    <div class="content">
+                        <div class="name">Fortnite</div>
+                        <div class="des">Conquer the Island and Claim Victory Royale in Fortnite! </div>
+                        <button>See More!</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/hero.png);">
+                    <div class="content">
+                        <div class="name">Kena: Bridge Of Spirits</div>
+                        <div class="des">Immerse Yourself in a Magical Journey, Unravel Mysteries, and Embrace the Power of Spirits! </div>
+                        <button>See More!</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/hero2.png);">
+                    <div class="content">
+                        <div class="name">Fortnite: Zero Build</div>
+                        <div class="des">Master the Art of Fortnite Zero Build - Ascend to New Heights and Dominate the Skies! </div>
+                        <button>See More!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button><i id="prev" class="fa-solid fa-arrow-left"></i></button>
+                <button> <i id="next" class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            
+        </div>
+        
     </section>
 
     <section id="feature" class="section-p1">

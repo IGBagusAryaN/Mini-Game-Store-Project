@@ -14,23 +14,46 @@ if (close) {
     })
 }
 
+// hero
+  let lists = document.querySelectorAll('.item');
+  const slider = document.getElementById('slide');
+  let currentIndex = 0;
+  
+  // Function to slide to the next item
+  function slideNext() {
+    currentIndex = (currentIndex + 1) % lists.length;
+    slider.appendChild(lists[currentIndex]);
+  }
+
+  // Function to slide to the previous item
+  function slidePrev() {
+    currentIndex = (currentIndex - 1 + lists.length) % lists.length;
+    slider.prepend(lists[currentIndex]);
+  }
+
+  // Set interval to auto slide to the next item every 3 seconds
+  const autoSlideInterval = setInterval(slideNext, 5000);
+
+  // Stop auto sliding when clicking on "previous" or "next" button
+  document.getElementById('prev').onclick = function () {
+    clearInterval(autoSlideInterval);
+    slidePrev();
+  };
+
+  document.getElementById('next').onclick = function () {
+    clearInterval(autoSlideInterval);
+    slideNext();
+  };
+
+
+
+
+
 // card slider
 const carousel1 = document.querySelector('.pro-container');
 const arrowBtns1 = document.querySelectorAll('#product1 i');
 const firstCardWidth1 = carousel1.querySelector('.pro').offsetWidth;
-// const carouselChildrens1 = [...carousel1.children]
 
-
-
-// let cardPerView1 = Math.round(carousel1.offsetWidth / firstCardWidth1);
-
-// carouselChildrens1.slice(-cardPerView1).reverse().forEach(card => {
-//     carousel1.insertAdjacentHTML("afterbegin", card.outerHTML)
-// })
-
-// carouselChildrens1.slice(0, cardPerView1).forEach(card => {
-//     carousel1.insertAdjacentHTML("beforeend", card.outerHTML)
-// })
 
 
 let isDragging = false, startX, startScrollLeft, timeoutId;

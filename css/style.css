@@ -150,10 +150,16 @@ body {
 #hero {
     width: 100%;
     height: 90vh;
+    overflow: hidden;
+}
+
+#hero .container {
+    overflow: hidden;
 }
 
 #hero #slide {
     width: max-content;
+    overflow: hidden;
 }
 
 
@@ -779,13 +785,13 @@ body {
     }
 
     #hero {
-        height: 0vh;
+        height: 60vh;
         padding: 20px;
         background-position: top 30% right 50%;
     }
 
     #hero .container .item {
-        top: 50%;
+        top: 35%;
         background-position: top 40% left 50%;
     }
 
@@ -795,6 +801,11 @@ body {
         left: 10px;
         width: 150px;
     }
+
+    #hero .container .item:nth-child(1),
+    #hero .container .item:nth-child(2) {
+    height: 60vh;
+}
     
     #hero .container .item:nth-child(2) .content {
         display: block;
@@ -810,7 +821,11 @@ body {
         font-size: 12px;
         margin-top: 5px;
     }
-    
+
+    #hero .container .buttons {
+        bottom: 220px;
+        z-index: 999999999999999999999;
+    }
 
     #feature {
         padding: 10px;

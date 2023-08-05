@@ -817,6 +817,15 @@ body {
         display: block;
         z-index: 11111;
     }
+    #hero .container .item:nth-child(3) {
+        z-index: 3;
+    }
+    #hero .container .item:nth-child(4) {
+        z-index: 2;
+    }
+    #hero .container .item:nth-child(5) {
+        z-index: 1;
+    }
 
     #hero .container .item:nth-child(3),
     #hero .container .item:nth-child(4),

@@ -791,7 +791,7 @@ body {
     }
 
     #hero .container .item {
-        top: 37%;
+        top: 39%;
         background-position: top 40% left 50%;
     }
 
@@ -815,7 +815,7 @@ body {
     #hero .container .item:nth-child(3),
     #hero .container .item:nth-child(4),
     #hero .container .item:nth-child(n+5) {
-        left: 40%;
+        left: 42%;
     }
     
 

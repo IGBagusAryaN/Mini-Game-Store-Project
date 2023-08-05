@@ -750,6 +750,7 @@ body {
         background-color: #FFFF;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
         transition: 0.5s ease;
+        z-index: 9999;
     }
 
     #navbar.active{
@@ -782,6 +783,10 @@ body {
 
     #close {
         display: block;
+    }
+
+    #header .nav-right .login {
+        margin-top: 30px;
     }
 
     #hero {
@@ -832,7 +837,7 @@ body {
 
     #hero .container .buttons {
         bottom: 200px;
-        z-index: 99;
+        z-index: 9;
     }
 
     #feature {

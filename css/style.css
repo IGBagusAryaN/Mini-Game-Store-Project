@@ -868,16 +868,16 @@ body {
 
     #product1 .pro {
         /* height: 220px; */
-        min-width: 200px;
+        min-width: 180px;
     }
 
     #product2 .pro {
-        height: 300px;
+        height: 320px;
         min-width: 310px;
     }
 
     #product2 .pro .des p {
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 4;
     }
 
     #product1 .pro .des .discount {

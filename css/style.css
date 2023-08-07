@@ -419,7 +419,7 @@ body {
 }
 
 #product1 .pro-container.dragging .pro {
-    cursor: grab;
+    /* cursor: grab; */
     user-select: none;
 }
 
@@ -860,6 +860,7 @@ body {
 
     #product1, #product2{
         padding: 0;
+        margin-top: 70px;
     }
 
     #product2 {

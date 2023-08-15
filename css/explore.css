@@ -17,6 +17,10 @@ img {
     text-align: center;
 }
 
+#image-grid h2 {
+    font-size: 40px;
+}
+
 #image-grid .grid-wrapper div {
     display: flex;
     justify-content: center;
@@ -59,6 +63,6 @@ img {
     }
 
     #image-grid .grid-wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }

@@ -52,3 +52,9 @@ img {
     grid-row: span 2;
 }
 
+@media  (max-width: 550px){
+
+    #image-grid {
+        padding: 10px 10px;
+    }
+}

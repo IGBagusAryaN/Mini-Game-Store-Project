@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+#image-grid .search {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(198, 196, 196);
+    padding: 5px 7px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    cursor: pointer;
+}
+
+#image-grid .search i {
+    color: gray;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+#image-grid .search form input{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
 
 img {
     max-width: 100%;
@@ -12,13 +35,26 @@ img {
     display: inline-block;
 }
 
+
+
 #image-grid {
     padding: 10px 80px;
-    text-align: center;
+}
+
+#image-grid .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #image-grid h2 {
     font-size: 40px;
+}
+
+#image-grid input {
+    outline: none;
+    border: none;
 }
 
 #image-grid .grid-wrapper div {

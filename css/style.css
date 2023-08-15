@@ -92,6 +92,7 @@ body {
 
 #header .nav-right .login {
     font-size: 20px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -172,7 +173,7 @@ body {
     background-size: cover;
     position: absolute;
     z-index: 1;
-    top: 60%;
+    top: 70%;
     border-radius: 3px;
     box-shadow: 0 30px 50px #505050;
     margin-top: 54px;
@@ -275,25 +276,27 @@ body {
 
 #hero .container .buttons {
     position: absolute;
-    bottom: 30px;
-    text-align: right;
-    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    top: 50px;
     width: 100%;
+   
     z-index: 9;
 }
 
 #hero .container .buttons button {
-    padding: 10px;
-    border-radius: 10%;
-    border: none;
-    cursor: pointer;
-;
+    opacity:0;
 }
 
-#hero .container .buttons button:hover {
+#hero .container .buttons button i {
+    width: 90px;
+    height: 90vh;
+}
+
+/* #hero .container .buttons button:hover {
     background-color: #555EDE;
     color: #FFFF;
-}
+} */
 
 
 
@@ -375,10 +378,9 @@ body {
 
 #product1 .pro {
     scroll-snap-align: start;
-    width: 23%;
-    height: 270px;
+    width: 27%;
     min-width: 250px;
-    padding: 10px 12px;
+    padding: 5px 7px;
     border: 1px solid #c0c0c0;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -866,10 +868,6 @@ body {
         font-size: 24px;
     }
 
-    #lg-cart {
-        display: none;
-    }
-
     #close {
         display: block;
     }
@@ -931,11 +929,6 @@ body {
     #hero .container .item .des {
         font-size: 12px;
         margin-top: 5px;
-    }
-
-    #hero .container .buttons {
-        bottom: 200px;
-        z-index: 9;
     }
 
     #feature {
